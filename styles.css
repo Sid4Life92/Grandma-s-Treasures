@@ -154,7 +154,7 @@ main {
 .carousel-prev,
 .carousel-next {
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     background-color: #98b300;
     border: none;
