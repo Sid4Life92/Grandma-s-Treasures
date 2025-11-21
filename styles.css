@@ -120,32 +120,37 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;       /* full viewport width */
+    height: 100vh;      /* full viewport height */
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+    overflow: auto;     /* allow scroll if content is too big */
+    z-index: 1000;      /* make sure it's above everything */
 }
 
 .carousel {
     position: relative;
-    width: 100%;
-    max-width: 500px;
+    max-width: 90%;     /* carousel scales with screen */
+    max-height: 90%;    /* leave some space around */
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel img {
-    width: 100%;
-    height: auto;
-    max-height: 70vh;
+    max-width: 100%;    /* image scales to container width */
+    max-height: 80vh;   /* image height fits viewport */
     object-fit: contain;
     border-radius: 10px;
 }
 
+/* Navigation buttons - bring them closer to carousel */
 .carousel-prev,
 .carousel-next {
     position: absolute;
@@ -157,15 +162,11 @@ main {
     font-size: 18px;
     cursor: pointer;
     border-radius: 6px;
+    z-index: 10;
 }
 
-.carousel-prev {
-    left: -5px;
-}
-
-.carousel-next {
-    right: -5px;
-}
+.carousel-prev { left: 5px; }   /* closer to the image */
+.carousel-next { right: 60px; }  /* closer to the image */
 
 .carousel-close {
     position: absolute;
@@ -178,6 +179,36 @@ main {
     color: #fff;
     border-radius: 6px;
     cursor: pointer;
+    z-index: 10;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .carousel-prev,
+    .carousel-next {
+        left: 2px;
+        right: 2px;
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        padding: 10px;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        left: 1px;
+        right: 1px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .carousel img {
+        max-height: 70vh;
+    }
 }
 
 /* ---------- AVAILABLE / UNAVAILABLE ---------- */
