@@ -181,15 +181,16 @@ main {
 }
 
 /* ---------- AVAILABLE / UNAVAILABLE ---------- */
-.available {
-    color: green;
+.availability.available {
+    color: green !important;
     font-weight: bold;
 }
 
-.unavailable {
-    color: red;
+.availability.unavailable {
+    color: red !important;
     font-weight: bold;
 }
+
 
 /* ---------- SCROLL TO TOP ---------- */
 #myBtn {

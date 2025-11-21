@@ -265,18 +265,20 @@ function createGalleryItem(item, containerId, index) {
     galleryItem.appendChild(price);
 
     // Availability
-    const availability = document.createElement('p');
-    availability.textContent = item.availability;
+const availability = document.createElement('p');
+availability.classList.add('availability'); // <-- IMPORTANT
 
-    // Προσθήκη CSS κλάσης ανάλογα με τη διαθεσιμότητα
-    if (item.availability === 'Διαθέσιμο') {
-        availability.classList.add('available');
-    } else if (item.availability === 'Μη Διαθέσιμο') {
-        availability.classList.add('unavailable');
-    }
+availability.textContent = item.availability;
 
-    galleryItem.appendChild(availability);
-    galleryContainer.appendChild(galleryItem);
+// Add class based on availability
+if (item.availability === 'Διαθέσιμο') {
+    availability.classList.add('available');
+} else if (item.availability === 'Μη Διαθέσιμο') {
+    availability.classList.add('unavailable');
+}
+
+galleryItem.appendChild(availability);
+galleryContainer.appendChild(galleryItem);
 }
 
 // Split items to two sections
