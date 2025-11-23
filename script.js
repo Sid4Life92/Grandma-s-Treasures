@@ -36,7 +36,7 @@ const galleryItems = [
         title: 'E. ΣΕΤ ΜΕ ΛΟΥΛΟΥΔΙΑ ΛΕΥΚΑ',
         description: '6 ΡΗΧΑ, 6 ΒΑΘΙΑ, 6 ΜΙΚΡΑ',
         price: 15,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Dishes/E/e1.jpg', 'photos/Dishes/E/e2.jpg', 'photos/Dishes/E/e3.jpg', 'photos/Dishes/E/e4.jpg', 'photos/Dishes/E/e5.jpg', 'photos/Dishes/E/e6.jpg']
     },
     {
@@ -124,7 +124,7 @@ const galleryItems = [
         title: '01. ΣΕΤ ΠΟΡΤΟΚΑΛΙ',
         description: '4 ΤΣΑΓΙΟΥ, 5 ΕΛΛΗΝΙΚΟΥ ΚΑΦΕ',
         price: 6,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Glasses/01/01 (1).jpeg', 'photos/Glasses/01/01 (2).jpeg', 'photos/Glasses/01/01 (3).jpeg']
     },
     {
