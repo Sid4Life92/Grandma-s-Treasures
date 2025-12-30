@@ -60,7 +60,7 @@ const galleryItems = [
         title: 'H. ΣΕΤ ΜΕ ΜΠΛΕ ΣΚΟΥΡΕΣ ΑΛΥΣΙΔΕΣ',
         description: '2 ΒΑΘΙΑ, 3 ΡΗΧΑ, 2 ΠΟΛΥ ΒΑΘΙΑ',
         price: 8,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Dishes/H/h1.jpg', 'photos/Dishes/H/h2.jpg', 'photos/Dishes/H/h3.jpg', 'photos/Dishes/H/h4.jpg']
     },
     {
@@ -148,7 +148,7 @@ const galleryItems = [
         title: '04. ΣΕΤ ΚΟΚΚΙΝΑ ΚΑΡΑΒΙΑ',
         description: '6 ΝΕΡΟΥ',
         price: 5,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Glasses/04/04 (1).jpeg', 'photos/Glasses/04/04 (2).jpeg']
     },
     {
@@ -196,7 +196,7 @@ const galleryItems = [
         title: '10. ΣΕΤ VINTAGE BEAUTY (MADE IN GERMANY)',
         description: '6 ΦΛΥΤΖΑΝΙΑ, 6 ΠΙΑΤΑΚΙΑ',
         price: 8,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Glasses/10/10 (1).jpeg', 'photos/Glasses/10/10 (2).jpeg']
     },
     {
@@ -228,7 +228,7 @@ const galleryItems = [
         title: "14. ΣΕΤ GRANDMA'S FAVOURITE",
         description: '6 ΦΛΥΤΖΑΝΙΑ, 6 ΠΙΑΤΑΚΙΑ',
         price: 5,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Glasses/14/14 (1).jpeg', 'photos/Glasses/14/14 (2).jpeg']
     },
     {
@@ -353,3 +353,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
