@@ -132,7 +132,7 @@ const galleryItems = [
         title: '02. ΣΕΤ ΚΑΡΑΒΙ ΣΑΛΑΜΙΝΑΣ + 2 ΚΑΝΑΤΑΚΙΑ ΤΣΙΠΟΥΡΟΥ',
         description: '1 ΠΑΓΟΥ, 4 ΠΟΤΗΡΙΑ ΤΣΙΠΟΥΡΟΥ, 2 ΚΑΝΑΤΑΚΙΑ ΤΣΙΠΟΥΡΟΥ',
         price: 6,
-        availability: 'Διαθέσιμο',
+        availability: 'Μη Διαθέσιμο',
         images: ['photos/Glasses/02/02 (1).jpeg', 'photos/Glasses/02/02 (2).jpeg']
     },
     {
@@ -148,7 +148,7 @@ const galleryItems = [
         title: '04. ΣΕΤ ΚΟΚΚΙΝΑ ΚΑΡΑΒΙΑ',
         description: '6 ΝΕΡΟΥ',
         price: 5,
-        availability: 'Μη Διαθέσιμο',
+        availability: 'Διαθέσιμο',
         images: ['photos/Glasses/04/04 (1).jpeg', 'photos/Glasses/04/04 (2).jpeg']
     },
     {
@@ -353,4 +353,5 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
 
